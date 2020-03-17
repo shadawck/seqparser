@@ -1,3 +1,5 @@
+# Article from : [towardsdatascience.com](https://towardsdatascience.com/regex-performance-in-python-873bd948a0ea)
+
 # Sequence parser with Regex expression for big set of data
 
 ## Recursive backtracking
