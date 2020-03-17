@@ -35,3 +35,17 @@ Search a specific regex from regIndex.txt in test/random.txt
 
 ip_adress: ['198.127.158.45', '192.168.1.1']
 ```
+
+# List Command 
+Just list all the regular expression available in regIndex.txt
+```bash 
+./seqparse.py list
+
+validEmail
+ip_adress
+macAdress
+bitcoin
+onion_v2
+onion_v3
+...
+```
