@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 usage: 
     seqparse.py list [--filepath <REGEX_FILE>]
