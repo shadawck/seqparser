@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+seqparser/__init__.py
+seqparser/__main__.py
+seqparser/seqparser.py
+seqparser.egg-info/PKG-INFO
+seqparser.egg-info/SOURCES.txt
+seqparser.egg-info/dependency_links.txt
+seqparser.egg-info/entry_points.txt
+seqparser.egg-info/requires.txt
+seqparser.egg-info/top_level.txt

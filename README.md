@@ -42,7 +42,7 @@ onion_v3: ['jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion']
 
 Search a specific regex from ```regIndex.txt``` in ```test/random.txt```
 ```sh
-$ seqparser find --partial ip_adress -f regindex.txt -s test/random.txt -s test/random.txt
+$ seqparser find --partial ip_adress -f regindex.txt -s test/random.txt
 
 ip_adress: ['198.127.158.45', '192.168.1.1']
 ```
@@ -51,7 +51,7 @@ ip_adress: ['198.127.158.45', '192.168.1.1']
 
 Just list all the regular expression available in regIndex.txt
 ```sh
-seqparser list
+$ seqparser list
 
 validEmail
 ip_adress
