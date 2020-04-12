@@ -1,0 +1,3 @@
+[console_scripts]
+seqparser = seqparser.__main__:main
+
