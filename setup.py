@@ -39,5 +39,10 @@ setup(
     install_requires=["docopt"],
     keywords='security, parser, forensic, analysis, sequence parser, regex',
     tests_require=test_deps,
-    extras_require=extras
+    extras_require=extras,
+    entry_points={
+        "console_scripts": [
+            "seqparser=seqparser.__main__:main",
+        ]
+    },
 )
