@@ -18,7 +18,7 @@ extras = {
 # This call to setup() does all the work
 setup(
     name="seqparser",
-    version="1.0.3",
+    version="1.1.0",
     description="Cli tool to find specific regular expression like email, ip adress, phone number, bitcoin adress ... in a file",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -35,6 +35,7 @@ setup(
         'Topic :: Internet :: Log Analysis',
     ],
     packages=["seqparser"],
+    package_data = {'seqparser': ['./*.txt']},
     include_package_data=True,
     install_requires=["docopt"],
     keywords='security, parser, forensic, analysis, sequence parser, regex',

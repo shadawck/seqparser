@@ -1,1 +1,2 @@
-include regIndex.txt
+include *.txt
+recursive-include ./

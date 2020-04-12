@@ -35,7 +35,6 @@ def regexListing(filepath):
 
 def main():
     arguments = docopt(__doc__, version='Seqparser')
-    print(arguments)
     
     ###############################
     ########### CLI VAR ########### 
