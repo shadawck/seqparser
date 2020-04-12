@@ -79,8 +79,6 @@ def main():
         else: sp.matchAll(__REGEX_FILE,__SOURCE_FILE)
         
 
-          
-
 
 if __name__ == '__main__': 
     main()
