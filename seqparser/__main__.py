@@ -3,8 +3,8 @@
 """
 Usage: 
     seqparser list [--filepath <REGEX_FILE>]
-    seqparser find [--filepath <REGEX_FILE>] --source <SOURCE_FILE> 
-    seqparser find [--partial <REGEX_NAME> | --filepath <REGEX_FILE>] --source <SOURCE_FILE> 
+    seqparser find --source <SOURCE_FILE> [--filepath <REGEX_FILE>] 
+    seqparser find --partial <REGEX_NAME> --source <SOURCE_FILE> [--filepath <REGEX_FILE>]
 
 Options:
   -h --help         Show this screen
@@ -68,9 +68,7 @@ def main():
     if _find_ : 
 
         # if file is True then it is set by the user else use default
-        if __file: 
-            __REGEX_FILE = arguments["<REGEX_FILE>"]
-        else :
+        if __file == False :
             __REGEX_FILE = defaultRegex
             
         if __partial:

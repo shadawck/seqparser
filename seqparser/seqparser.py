@@ -25,8 +25,9 @@ def matchAll(filepath, data) :
 def matchPartial(regexName,filepath,data):
     d      = listToDict(filepath)
     data   = getData(data)
-    print(regexName + ':', re.findall(d[regexName],data))
-
+    found = re.findall(d[regexName],data)
+    for f in found :
+        print(regexName + ':', f)
 
 
 
