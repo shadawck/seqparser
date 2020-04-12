@@ -1,5 +1,0 @@
-docopt
-
-[test]
-pytest
-pytest-cov
