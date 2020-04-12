@@ -1,25 +1,36 @@
-# SeqParse
+# GETDEP
 
+[![codecov](https://codecov.io/gh/remiflavien1/getdep/branch/master/graph/badge.svg)](https://codecov.io/gh/remiflavien1/getdep)  [![PyPI version](https://badge.fury.io/py/getdep.svg)](https://badge.fury.io/py/getdep) [![Requirements Status](https://requires.io/github/remiflavien1/getdep/requirements.svg?branch=master)](https://requires.io/github/remiflavien1/getdep/requirements/?branch=master) [![Code Coverage](https://github.com/remiflavien1/getdep/workflows/Code%20coverage/badge.svg)](https://github.com/remiflavien1/getdep/actions?query=workflow%3A%22Code+coverage%22) [![Quality check](https://github.com/remiflavien1/getdep/workflows/Quality%20check/badge.svg)](https://github.com/remiflavien1/getdep/actions?query=workflow%3A%22Quality+check%22) 
 
-## Install prerequisite
+Get dependencies for a given package management system and a given package. 
 
-Install python3 module
+## Install
+
+You can install ```seqparse``` either via pip (PyPI) or from source.
+To install using pip:
 ```bash
-pip3 install -r requirements.txt
-# If you don't have pip3 
-python3 -m pip install -r requirements.txt
+python3 -m pip install seqparse
+```
+Or manually:
+```
+git clone https://github.com/remiflavien1/seqparse
+cd seqparse   
+python3 setup.py install   
 ```
 
-And that's it, you're ready to go ! 
 
-## seqparse
 
-### Find command 
 
+
+## Usage
+
+### CLI 
+
+#### Find command
 
 Search through all regex from regIndex.txt in test/random.txt
-```bash
-./seqparse.py find --all -f regindex.txt -s test/random.txt
+```sh
+$ seqparse find --all -f regindex.txt -s test/random.txt
 
 validEmail: ['sometest@gmail.com']
 ip_adress: ['198.127.158.45', '192.168.1.1']
@@ -29,16 +40,17 @@ onion_v2: ['c4i7yopvpo4p7cyd.onion']
 onion_v3: ['jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion']
 ```
 
-Search a specific regex from regIndex.txt in test/random.txt
-```bash
-./seqparse.py find --partial ip_adress -f regindex.txt -s test/random.txt -s test/random.txt
+Search a specific regex from ```regIndex.txt``` in ```test/random.txt```
+```sh
+$ seqparse find --partial ip_adress -f regindex.txt -s test/random.txt -s test/random.txt
 
 ip_adress: ['198.127.158.45', '192.168.1.1']
 ```
 
-# List Command 
+#### List Command
+
 Just list all the regular expression available in regIndex.txt
-```bash 
+```sh
 ./seqparse.py list
 
 validEmail
@@ -49,3 +61,14 @@ onion_v2
 onion_v3
 ...
 ```
+
+
+# ROADMAP
+
+- Add support for [Pyre2](https://github.com/facebook/pyre2/)
+- Add support for other regex expression (mostly for OSINT)
+- Add specific analysis on some regex  (with a --detail flag for example)
+- Add a scoring feature based on exact matching and deviation from original regex
+- Add output export
+- Add Web dashboard visualization
+

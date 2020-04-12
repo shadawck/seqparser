@@ -1,2 +1,6 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.vscode/
 regIndexSave.py
-.vscode
+Article.md
