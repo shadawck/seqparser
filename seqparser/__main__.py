@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""
+"""Seqparser 1.1.0
 Usage: 
     seqparser list [--filepath <REGEX_FILE>]
     seqparser find --source <SOURCE_FILE> [--filepath <REGEX_FILE>] 
