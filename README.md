@@ -1,20 +1,20 @@
-# GETDEP
+# SEQPARSER
 
-[![codecov](https://codecov.io/gh/remiflavien1/getdep/branch/master/graph/badge.svg)](https://codecov.io/gh/remiflavien1/getdep)  [![PyPI version](https://badge.fury.io/py/getdep.svg)](https://badge.fury.io/py/getdep) [![Requirements Status](https://requires.io/github/remiflavien1/getdep/requirements.svg?branch=master)](https://requires.io/github/remiflavien1/getdep/requirements/?branch=master) [![Code Coverage](https://github.com/remiflavien1/getdep/workflows/Code%20coverage/badge.svg)](https://github.com/remiflavien1/getdep/actions?query=workflow%3A%22Code+coverage%22) [![Quality check](https://github.com/remiflavien1/getdep/workflows/Quality%20check/badge.svg)](https://github.com/remiflavien1/getdep/actions?query=workflow%3A%22Quality+check%22) 
+[![codecov](https://codecov.io/gh/remiflavien1/seqparser/branch/master/graph/badge.svg)](https://codecov.io/gh/remiflavien1/seqparser)  [![PyPI version](https://badge.fury.io/py/seqparser.svg)](https://badge.fury.io/py/seqparser) [![Requirements Status](https://requires.io/github/remiflavien1/seqparser/requirements.svg?branch=master)](https://requires.io/github/remiflavien1/seqparser/requirements/?branch=master) [![Code Coverage](https://github.com/remiflavien1/seqparser/workflows/Code%20coverage/badge.svg)](https://github.com/remiflavien1/seqparser/actions?query=workflow%3A%22Code+coverage%22) [![Quality check](https://github.com/remiflavien1/seqparser/workflows/Quality%20check/badge.svg)](https://github.com/remiflavien1/seqparser/actions?query=workflow%3A%22Quality+check%22) 
 
 Get dependencies for a given package management system and a given package. 
 
 ## Install
 
-You can install ```seqparse``` either via pip (PyPI) or from source.
+You can install ```seqparser``` either via pip (PyPI) or from source.
 To install using pip:
 ```bash
-python3 -m pip install seqparse
+python3 -m pip install seqparser
 ```
 Or manually:
 ```
-git clone https://github.com/remiflavien1/seqparse
-cd seqparse   
+git clone https://github.com/remiflavien1/seqparser
+cd seqparser   
 python3 setup.py install   
 ```
 
@@ -30,7 +30,7 @@ python3 setup.py install
 
 Search through all regex from regIndex.txt in test/random.txt
 ```sh
-$ seqparse find --all -f regindex.txt -s test/random.txt
+$ seqparser find --all -f regindex.txt -s test/random.txt
 
 validEmail: ['sometest@gmail.com']
 ip_adress: ['198.127.158.45', '192.168.1.1']
@@ -42,7 +42,7 @@ onion_v3: ['jamie3vkiwibfiwucd6vxijskbhpjdyajmzeor4mc4i7yopvpo4p7cyd.onion']
 
 Search a specific regex from ```regIndex.txt``` in ```test/random.txt```
 ```sh
-$ seqparse find --partial ip_adress -f regindex.txt -s test/random.txt -s test/random.txt
+$ seqparser find --partial ip_adress -f regindex.txt -s test/random.txt -s test/random.txt
 
 ip_adress: ['198.127.158.45', '192.168.1.1']
 ```
@@ -51,7 +51,7 @@ ip_adress: ['198.127.158.45', '192.168.1.1']
 
 Just list all the regular expression available in regIndex.txt
 ```sh
-./seqparse.py list
+seqparser list
 
 validEmail
 ip_adress
@@ -61,7 +61,6 @@ onion_v2
 onion_v3
 ...
 ```
-
 
 # ROADMAP
 

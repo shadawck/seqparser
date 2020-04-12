@@ -17,12 +17,12 @@ extras = {
 
 # This call to setup() does all the work
 setup(
-    name="seqparse",
+    name="seqparser",
     version="1.0.0",
     description="Cli tool to find specific regular expression like email, ip adress, phone number, bitcoin adress ... in a file",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/remiflavien1/seqparse",
+    url="https://github.com/remiflavien1/seqparser",
     author="shadawck",
     author_email="hug211mire@gmail.com",
     license="MIT",
@@ -34,7 +34,7 @@ setup(
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Topic :: Internet :: Log Analysis',
     ],
-    packages=["seqparse"],
+    packages=["seqparser"],
     include_package_data=True,
     install_requires=["docopt"],
     keywords='security, parser, forensic, analysis, sequence parser, regex',

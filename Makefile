@@ -1,4 +1,4 @@
-MODULE=seqparse
+MODULE=seqparser
 
 
 require:
