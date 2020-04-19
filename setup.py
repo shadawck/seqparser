@@ -18,7 +18,7 @@ extras = {
 # This call to setup() does all the work
 setup(
     name="seqparser",
-    version="1.1.0",
+    version="1.1.2",
     description="Cli tool to find specific regular expression like email, ip adress, phone number, bitcoin adress ... in a file",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Seqparser 1.1.0
+"""Seqparser 1.1.1
 Usage: 
     seqparser list [--filepath <REGEX_FILE>]
     seqparser find --source <SOURCE_FILE> [--filepath <REGEX_FILE>] 
@@ -34,7 +34,7 @@ def regexListing(filepath):
 ########  MAIN  #########
 
 def main():
-    arguments = docopt(__doc__, version='Seqparser')
+    arguments = docopt(__doc__, version='Seqparser 1.1.2')
     
     ###############################
     ########### CLI VAR ########### 
